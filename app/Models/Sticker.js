@@ -19,8 +19,8 @@ export class Stickers {
 
   get Template() {
   return `
-  <div class="col-md-4">
-  <div class="card m-3 text-dark minheight shadow border-top-0 bg-light">
+  <div class="col-xs-12 col-sm-6  col-lg-4 col-xl-3">
+  <div class="card m-3 text-dark minheight shadow border-top-0 ">
     <div class="a${this.id}e p-1 rounded-top"></div>
       <style>
       .a${this.id}e {
@@ -33,7 +33,7 @@ export class Stickers {
     <div class="card-body">
     <div class="d-flex justify-content-between">
       <h5 class="card-title text-center">${this.name}</h5>
-      <a title="Delete Sticky Note" class="button bs-danger"
+      <a title="Delete Sticky Note" class="button selectable bs-danger"
       onclick="app.stickersController.removeSticker('${this.id}')"><i class=" fa-2x fas fa-times"></i></a>
     </div>
     <div class="text-end">

@@ -4,8 +4,6 @@ import { loadState, saveState } from "../Utils/LocalStorage.js";
 
 
 
-
-
 function _draw() {
   const stickers = ProxyState.stickers
   let template = ''
@@ -21,7 +19,7 @@ export class StickersController {
     ProxyState.on('tasks', saveState)
     loadState()
     _draw()
-  }
+    }
 
   createSticker() {
     window.event.preventDefault()

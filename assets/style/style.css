@@ -1,1 +1,23 @@
 /* BASIC STYLES HERE */
+
+.minheight {
+  min-height: 30vh;
+}
+
+.foo {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  background-color: aqua;
+  color: black;
+}
+
+.blue1 {
+  background: #13b4ff;
+}
+
+.taskcount{
+font-size: small;
+}

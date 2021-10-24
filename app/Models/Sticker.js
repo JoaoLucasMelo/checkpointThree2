@@ -69,6 +69,6 @@ export class Stickers {
     let found = tasks.filter(task => task.checked == true)
     let totalComplete = found.length
     console.log(totalComplete)
-    return `${totalTasks} tasks / ${totalComplete} complete`
+    return `${totalTasks} Active | ${totalComplete} Checked`
   }
 }

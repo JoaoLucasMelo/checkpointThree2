@@ -19,33 +19,39 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select">
+    <!-- <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select">
       <a class="navbar-brand ms-3" href="#">
         <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
           loading="lazy">
         <span class="ms-2">checkpointThree</span>
       </a>
-    </nav>
+    </nav> -->
+    <div class="header"></div>
   </header>
   <main>
+
     <div class="container-fluid">
-      <div class="row ms-5">
-        <div class="col-6">
-          <div class="card shadow m-3">
-            <div class="card-body">
-              <h4 class="card-title">Create a new Sticky Note!</h4>
-              <div class="row flex-row justify-content-center">
-                <div class="col-12 mt-1 p-2">
-                  <form onsubmit="app.stickersController.createSticker()"
-                    class="form-floating d-flex justify-content-between align-items-center">
-                    <input type="text" minlength="3" maxlength="
+      <img class="stickynote stickynoteremove"
+        src="assets\img\12-123414_best-free-sticky-notes-png-white-sticky-note-removebg-preview.png" alt="">
+      <div class="row">
+        <div class="row ">
+          <div class="col-md-7 mt-3">
+            <div class="card elevation-5 m-3">
+              <div class="card-body">
+                <h4 class="card-title">Create a new Sticky Note!</h4>
+                <div class="row flex-row justify-content-center">
+                  <div class="col-12 mt-1 p-2">
+                    <form onsubmit="app.stickersController.createSticker()"
+                      class="form-floating d-flex justify-content-between align-items-center">
+                      <input type="text" minlength="3" maxlength="
                     15" class="form-control" id="name" placeholder="..." value="" required>
-                    <label for="floatingInputValue">Enter your Sticker's Name Here...</label>
-                    <div class="p-0 ms-3">
-                      <input type="color" class="form-control form-control-color " id="color" value="#27BCBE"
-                        title="Choose your Sticker's color">
-                    </div>
-                  </form>
+                      <label for="floatingInputValue">Sticky's Name Here...</label>
+                      <div class="p-0 ms-3">
+                        <input type="color" class="form-control form-control-color " id="color" value="#F6F286"
+                          title="Choose your Sticker's color">
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
@@ -53,10 +59,9 @@
         </div>
       </div>
       <div id="stickers" class="row">
-
       </div>
   </main>
-  <footer class="bg-dark text-light">
+  <footer class="foootcolor text-dark">
     <div class="text-end me-4 no-select">
       <p><small>Made with 💖 by John Melo | Codeworks</small></p>
     </div>

@@ -19,7 +19,7 @@ export class Stickers {
 
   get Template() {
   return `
-  <div class="col-xs-12 col-sm-6  col-lg-4 col-xl-3">
+  <div class="col-xs-12 col-sm-6 col-lg-4 col-xl-3">
   <div class="card m-3 text-dark minheight shadow border-top-0 ">
     <div class="a${this.id}e p-1 rounded-top"></div>
       <style>

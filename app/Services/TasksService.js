@@ -13,8 +13,8 @@ class TasksService {
 
   checkBox(sId) {
     const tasks = ProxyState.tasks
-    const found = tasks.find(task => sId == task.id)
-    found.checked = !found.checked
+    const box = tasks.find(task => sId == task.id)
+    box.checked = !box.checked
     ProxyState.tasks = ProxyState.tasks
     saveState()
   }

@@ -27,9 +27,5 @@ export class TasksController {
     tasksService.checkBox(sId)
   }
 
-  countTasks() {
-    tasksService.countTasks
-  }
-
 
 }
